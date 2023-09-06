@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeZ</title>
+    <!-- -----font-awesome-cdn--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- -----slider cdn--------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- -----google font cdn---------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- ------bootstrap-icon-cdn------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- ------style---------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar  start -->
+    <nav class=" navbar-area navbar navbar-expand-lg m-auto px-5">
+
+        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Home
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Listing
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Property
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Blogs
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#">Pages
+                        <i class="bi bi-chevron-compact-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="navbar-brand">
+            <img class="logo" src="./img/logo.png" alt="">
+        </a>
+
+        <div class="account d-flex mt-4">
+            <i class="bi bi-person-fill fs-4 mx-1"></i>
+            <p class="login fw-bold">
+                <a href="#" class="text-decoration-none text-dark">Login</a>
+                <i class="bi bi-slash-lg fw-bolder"></i>
+                <a href="#" class="text-decoration-none text-dark">Register</a>
+            </p>
+
+            <button class="nav-btn bg-dark text-light border-0 mx-2">Add Property
+                <i class="bi bi-arrow-up-right"></i>
+            </button>
+            <div class="nasted-list" style="cursor: pointer;">
+                <i class="bi bi-list-nested fw-bold"></i>
+            </div>
+        </div>
+
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner area start -->
+    <div class="banner-area">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="banner-details w-75">
+                        <div class="banner-title mt-5">
+                            <h1 class="mx-2 fw-bold fs-3">Discover a place you'll love to live</h1>
+                        </div>
+                        <div class="banner-link mt-4">
+                            <a class="text-decoration-none fw-bold text-dark mx-3" href="#">Buy</a>
+                            <a class="text-decoration-none fw-bold text-dark mx-3" href="#">Rent</a>
+                            <a class="text-decoration-none fw-bold text-dark mx-3" href="#">Sold</a>
+                        </div>
+                        <div class="searching d-flex justify-content-evenly mt-3">
+                            <div class="search-input d-flex">
+                                <i class="bi bi-clipboard2 mt-3 mx-3"></i>
+                                <input type="email" class="form-control-plaintext border-0 mt-1"
+                                    id="exampleFormControlInput1" placeholder="Enter Keyword">
+                            </div>
+
+                            <div class="search-btn d-flex mt-3">
+                                <div><i class="bi bi-sliders"></i></div>
+                                <div class="mx-2">
+                                    <p class="mx-2 fw-bold mt-1">Advanced</p>
+                                </div>
+                                <button class="nav-btn bg-dark text-light border-0 p-2 mt-0">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="count-area d-flex justify-content-evenly mt-5">
+                            <div class="count">
+                                <h4 class="fw-bold">400</h4>
+                                <p>Awward Wining</p>
+                            </div>
+                            <div class="count">
+                                <h4 class="fw-bold">1k+</h4>
+                                <p>Happy Customers</p>
+                            </div>
+                            <div class="count">
+                                <h4 class="fw-bold">200+</h4>
+                                <p>Property Ready</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="banner-studio text-light d-flex flex-colum align-items-end justify-content-evenly">
+                        <div class="rate-studio mx-4">
+                            <div class="rent">
+                                <p class="fw-bold">$986.00</p>
+                            </div>
+                            <div class="avenue">
+                                <h4 class="fw-bold">Studio On Grand Avenue</h4>
+                            </div>
+                            <div class="studio-size">
+                                <p>32 beds - 91 Boths - 1500 sq ft</p>
+                            </div>
+                        </div>
+
+                        <div class="btn-studio">
+                            <button class="btn btn-outline-light">View Details
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- progress area-->
+                    <div class="progress-area d-flex bg-dark w-75 p-3">
+                        <span class="text-light mx-2">01</span>
+                        <div class="progress w-50 bg-dark mx-2" role="progressbar" aria-label="Example 2px high"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 2px">
+                            <div class="progress-bar" style="width: 25%;background-color: white;"></div>
+                        </div>
+                        <span class="text-light">04</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner area ends -->
+
+    <!-- company area start-->
+    <div class="company-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="company-heading">
+                <h4 class="text-center text-muted">
+                    Trusted by the world's best
+                </h4>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="company-area d-md-flex justify-content-between">
+                        <div class="company-img mb-3">
+                            <img src="./img/company1.png" alt="">
+                        </div>
+                        <div class="company-img mb-2">
+                            <img src="./img/company2.png" alt="">
+                        </div>
+                        <div class="company-img mb-2">
+                            <img src="./img/company3.png" alt="">
+                        </div>
+                        <div class="company-img mb-2">
+                            <img src="./img/company4.png" alt="">
+                        </div>
+                        <div class="company-img">
+                            <img src="./img/company5.png" alt="">
+                        </div>
+                        <div class="company-img">
+                            <img src="./img/company6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- company area ends-->
+
+    <!-- featured home area start -->
+    <div class="feature-home-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="feature-top d-flex justify-content-between">
+                        <div class="feature-title">
+                            <h4 class="fw-bold">Featured Homes</h4>
+                            <p class="text-muted">Get some Inspriations from 1800+ skills</p>
+                        </div>
+                        <div class="feature-carousel-btn mt-4">
+                            <i class="bi bi-arrow-left-short fs-5 mx-2"></i>
+
+                            <i class="bi bi-record-fill"></i>
+                            <i class="bi bi-record-fill"></i>
+                            <i class="bi bi-record-fill"></i>
+                            <i class="bi bi-record-fill"></i>
+                            <i class="bi bi-record-fill"></i>
+
+                            <i class="bi bi-arrow-right-short fs-5 mx-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card">
+                        <div class="feature-img">
+                            <img src="./img/feature-home.jfif" alt="">
+                        </div>
+                        <div class="feature-details text-center text-light">
+                            <h4>Apartsment for sell</h4>
+                            <p>22 Proparties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card">
+                        <div class="feature-img">
+                            <img src="./img/feature-home.jfif" alt="">
+                        </div>
+                        <div class="feature-details text-center text-light">
+                            <h4>Apartsment for sell</h4>
+                            <p>22 Proparties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card">
+                        <div class="feature-img">
+                            <img src="./img/feature-home.jfif" alt="">
+                        </div>
+                        <div class="feature-details text-center text-light">
+                            <h4>Apartsment for sell</h4>
+                            <p>22 Proparties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card">
+                        <div class="feature-img">
+                            <img src="./img/feature-home.jfif" alt="">
+                        </div>
+                        <div class="feature-details text-center text-light">
+                            <h4>Apartsment for sell</h4>
+                            <p>22 Proparties</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- featured home area ends -->
+
+    <!-- feature-proparties-area start  -->
+    <div class="feature-proparties-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="feature-top d-flex justify-content-between">
+                        <div class="feature-title">
+                            <h4 class="fw-bold">Our Featured Proparties</h4>
+                            <p class="text-muted">Aliquam lacinia diam quis locus euismod</p>
+                        </div>
+
+                        <div class="feature-btn mt-4">
+                            <button class="fw-bold border-0 px-2 py-1">for Rent</button>
+                            <button class="fw-bold border-0 px-2 py-1">for sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <div class="feture-img">
+                            <img src="./img/feature-property1.jfif" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="inner-property-btn">
+                            <button class="border-0 bg-danger text-light fw-bold">
+                                <i class="bi bi-box-arrow-in-up-right"></i>
+                                FEATURE
+                            </button>
+                            <button class="border-0 bg-dark text-light fw-bold">
+                                FOR SALE
+                            </button>
+                        </div>
+
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <div class="feture-img">
+                            <img src="./img/feature-property2.jfif" class="card-img-top" alt="...">
+                        </div>
+                        <div class="inner-icon-btn d-flex">
+                            <button class="border-0 bg-dark text-light">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </button>
+                            <button class="border-0 bg-dark text-light">
+                                <i class="bi bi-bookmarks"></i>
+                            </button>
+                            <button class="border-0 bg-dark text-light">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <img src="./img/feture-property3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <div class="feture-img">
+                            <img src="./img/feture-property4.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="inner-property-btn">
+                            <button class="border-0 bg-danger text-light fw-bold">
+                                <i class="bi bi-box-arrow-in-up-right"></i>
+                                FEATURE
+                            </button>
+                        </div>
+
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <div class="feture-img">
+                            <img src="./img/feture-property5.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="inner-property-btn">
+                            <button class="border-0 bg-danger text-light fw-bold">
+                                <i class="bi bi-box-arrow-in-up-right"></i>
+                                FEATURE
+                            </button>
+                        </div>
+
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card bg-transparent border-0">
+                        <img src="./img/feture-property6.jfif" class="card-img-top" alt="...">
+                        <div class="card-body feature-card-body">
+                            <h4 class="card-title fw-bold">Equistrain Family Home</h4>
+                            <p class="card-desc text-muted"> California City. CA USA </p>
+                            <div class="post-time d-flex justify-content-between text-muted mt-3">
+                                <div class="post-icon d-flex">
+                                    <div class="fw-bold">
+                                        <i class="bi bi-printer"></i>3
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-cart2"></i>4
+                                    </div>
+                                    <div class="fw-bold">
+                                        <i class="bi bi-download"></i>1200
+                                    </div>
+                                </div>
+                                <div class="property-btn">
+                                    <button>$1400</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="propaerties-btn text-center mt-3">
+                <button class="bg-dark text-light border-0 px-3 py-2">
+                    Learn More<i class="bi bi-arrow-up-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- feature-proparties-area ends -->
+
+    <!-- city area start -->
+    <div class="city-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="city-title">
+                        <h4 class="fw-bold">Explore Cities</h4>
+                        <p class="text-muted">Get some Inspriations from 1800+ skills</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 mb-2">
+                    <div class="city-img">
+                        <img src="./img/city-home1.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>New York</h4>
+                        <p>22 Properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="city-img">
+                        <img src="./img/city-home2.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>Chicago</h4>
+                        <p>22 Properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="city-img">
+                        <img src="./img/city-home3.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>Manhattan</h4>
+                        <p>22 Properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="city-img">
+                        <img src="./img/city-home4.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>San Franscisco</h4>
+                        <p>22 Properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="city-img">
+                        <img src="./img/city-home5.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>Los Angeles</h4>
+                        <p>22 Properties</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="city-img">
+                        <img src="./img/city-home6.jpeg" alt="">
+                    </div>
+                    <div class="city-name">
+                        <h4>New York</h4>
+                        <p>California</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- city area ends -->
+
+    <!-- exprience-area start-->
+    <div class="exprience-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row">
+                <div class="col-md-6 mb-3 py-5">
+                    <div class="exprience-title">
+                        <h1 class="fw-bold">More than 20 Years of Real Estate Exprience</h1>
+                    </div>
+                    <div class="exprience-desc py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat tenetur molestias nam odit
+                            incidunt vero?</p>
+                    </div>
+                    <div class="exprience-btn mt-3">
+                        <button class="bg-dark text-light border-0 px-3 py-2">
+                            Get Started<i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="count-area">
+                        <div class="count-sale">
+                            <p class="fw-bold fs-2">2500+</p>
+                            <p class="text-muted">Listing For <br>Sale</p>
+                        </div>
+                        <div class="count-sale d-grid justify-content-end">
+                            <p class="fw-bold fs-2">1350+</p>
+                            <p class="text-muted">Listing For <br>Sale</p>
+                        </div>
+                        <div class="count-sale">
+                            <p class="fw-bold fs-2">900+</p>
+                            <p class="text-muted">Listing For <br>Sale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- exprience area ends -->
+
+
+    <!-- testimonial area start -->
+    <div class="testimonial-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row text-center px-3">
+                <div class="col-md-12">
+                    <div class="testimonial-title">
+                        <h4 class="fw-bold">Testimonials From Our Customers</h4>
+                        <p>Aliquam lacinia diam quis locus euismod</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-4">
+                    <div class="testimonial-img">
+                        <img class="rounded-3" src="./img/testimonial-home.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5">
+                    <div class="testimonial-text rounded-4">
+                        <h4 class="fw-bold">Perfect quality</h4>
+                    </div>
+                    <div class="testimonial-text">
+                        <p class="fw-bold">Lorem ipsum,dolor amet consectetur consectetur dolor sit amet, eligendi
+                            tenetur , eligendi tenetur consectetur adipisicing elit. Libero, eligendi
+                            tenetur consectetur.</p>
+                    </div>
+                    <div class="customer-name">
+                        <h4 class="fw-bold">
+                            Dianne Russel
+                        </h4>
+                        <p class="text-muted">
+                            Bank Of Asia
+                        </p>
+                    </div>
+
+                    <div class="slide-btn">
+                        <a class="border border-dark rounded-5 p-2" href="#"><i class="bi bi-chevron-left"></i></a>
+                        <a class="border border-dark rounded-5 p-2 mx-3" href="#"><i
+                                class="bi bi-chevron-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial area ends -->
+
+    <!-- help-area start -->
+    <div class="help-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row text-center px-3">
+                <div class="col-md-12">
+                    <div class="help-title">
+                        <h4 class="fw-bold">See how Realton Can Help</h4>
+                        <p>Aliquam lacinia diam quis locus euismod</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4 mb-2">
+                    <div class="card bg-transparent border-0">
+                        <img src="./img/sell-home.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body sell-card-body text-center">
+                            <h5 class="card-title fw-bold">Buy a Property</h5>
+                            <p class="card-text">Some quick example text to build and make
+                                the card's content.</p>
+                            <button class="sell-btn px-3 py-2">
+                                Find a Home<i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card bg-transparent border-0">
+                        <img src="./img/sell-home.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body sell-card-body text-center">
+                            <h5 class="card-title fw-bold">Sell a Property</h5>
+                            <p class="card-text">Some quick example text to build and make
+                                the card's content.</p>
+                            <button class="sell-btn px-3 py-2">
+                                Place an ad<i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card bg-transparent border-0">
+                        <img src="./img/sell-home.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body sell-card-body text-center">
+                            <h5 class="card-title fw-bold">Rent a Property</h5>
+                            <p class="card-text">Some quick example text to build and make
+                                the card's content.</p>
+                            <button class="sell-btn px-3 py-2">
+                                Find a Rental<i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- help area ends -->
+
+    <!-- inquiry area start -->
+    <div class="inquiry-area">
+        <div class="container w-75 m-auto py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="inquiry-title">
+                                <h4 class="fw-bold">Best Estate Inquiry Form</h4>
+                                <p>As the best complexity of building to incrase</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <!-- inputs por select -->
+                        <div class=" mb-3">
+                            <label for="form-label" class="form-label fw-bold">Inquiry Type</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Apartsment</option>
+                                <option value="1">For sell</option>
+                                <option value="2">For buy</option>
+                                <option value="1">For Booking</option>
+                            </select>
+                        </div>
+
+                        <!-- 2 column grid layout with text inputs for the name-->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="form-label" class="form-label fw-bold">Personal Role</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select</option>
+                                    <option value="1">For sell</option>
+                                    <option value="2">For buy</option>
+                                    <option value="1">For Booking</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="form6Example2">Personal name</label>
+                                    <input type="text" id="form6Example2" class="form-control"
+                                        placeholder="Your Name" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input for the email -->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="creativeplayers088@gmail.com">
+                        </div>
+                        <!-- inputs por select -->
+                        <div class=" mb-3">
+                            <label for="form-label" class="form-label fw-bold">How to address you</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Mr.</option>
+                                <option value="1">david</option>
+                                <option value="2">Jhon</option>
+                                <option value="1">Frandez</option>
+                            </select>
+                        </div>
+                        <!-- 2 column grid layout with text inputs for the price and last sq ft -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="form6Example1">Max Price</label>
+                                    <input type="text" id="form6Example1" class="form-control" placeholder="$90" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label fw-bold" for="form6Example2">Min Size (sq / ft)</label>
+                                    <input type="text" id="form6Example2" class="form-control" placeholder="20" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form btn -->
+                        <button class="bg-dark text-light w-100 border-0 px-3 py-2">
+                            Submit<i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="inquiry-img">
+                        <img src="./img/inquery-home.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inquiry area ends -->
+
+    <!-- agent area start -->
+    <div class="agent-area bg-dark">
+        <div class="cintainer w-75 m-auto mt-5 py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row agent-register text-light">
+                        <div class="col-md-12">
+                            <div class="agent-title">
+                                <h4 class="fw-bold">Best Estate Inquiry Form</h4>
+                                <p>As the best complexity of building to incrase</p>
+                            </div>
+                            <div class="agent-btn">
+                                <button class="border-0 px-3 py-2">
+                                    Register Now<i class="bi bi-arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="agent-img mx-5">
+                        <img src="./img/agent-home.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- agent area ends -->
+
+    <!-- footer area start -->
+    <div class="footer-area">
+        <div class="container w-75 m-auto py-3">
+            <div class="row text-dark pt-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div class="logo-desc mt-3">
+                        <p class="footer-font">Address</p>
+                        <span class="footer-font fw-bold">329 Queensbery srteet,North Melbourne vIc
+                            3051,Austrtalia.</span>
+
+                        <p class="mt-3">Total Free Customer Care <br>
+                            <span class="footer-font fw-bold">+(0) 123 050 945 02</span>
+                        </p>
+
+                        <p>Nee Live Support?
+                            <span class="footer-font fw-bold">Hi@gmail.com</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title fw-bold mb-3">Popular search</h4>
+                    <div class="footer-search-area">
+                        <div class="footer-list d-flex flex-column">
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Appartment of Rent</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Apartment low to hide</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Offices for Buy</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Offices for Rent</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Product Development</a>
+                        </div>
+                        <div class="footer-title fw-bold mt-3">Discover</div>
+                        <div class="footer-list d-flex flex-column">
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Miami</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Loss Angeles</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">Chicago</a>
+                            <a class=" text-decoration-none text-muted footer-font" href="#">New York</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title fw-bold mb-3">quick Links</h4>
+                    <div class="footer-list d-flex flex-column">
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Terms of Use</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Privacy Policy</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Pricing Plans</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Our services</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Contact Supported</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">Careers</a>
+                        <a class=" text-decoration-none text-muted footer-font" href="#">FAQs</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title fw-bold mb-3">Keep Yourself Up to Date</h4>
+                    <div class="send-input d-flex p-1">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Yout Email">
+                        <a href="#" class="send-btn bg-dark text-light p-2"><i class="bi bi-telegram"></i></i></a>
+                    </div>
+                    <div class="get-app mt-3">
+                        <h4 class="footer-title fw-bold mb-3">Apps</h4>
+                        <button class="bg-dark text-light border-0 mb-2 d-flex">
+                            <div><i class="bi bi-apple"></i></div>
+                            <div> Download on the <br> <span class="fw-bold">Apple Store</span></div>
+                        </button>
+                        <button class="bg-dark text-light border-0 d-flex">
+                            <div><i class="bi bi-google-play"></i></div>
+                            <div> Get it on <br><span class="fw-bold">Google Play</span></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <p class="footer-last">@HomeZ - All Right Reserved</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icon d-flex justify-content-md-end">
+                        <p class="social-title fw-bold mt-2 mx-2">follow Us</p>
+                        <a href=""><i class="fa-brands fa-facebook-f text-muted mx-2"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter text-muted mx-2"></i></a>
+                        <a href=""><i class="fa-brands fa-skype text-muted mx-2"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in text-muted mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- footer area ends -->
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

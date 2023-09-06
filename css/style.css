@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Open+Sans:wght@300;500&family=Roboto&display=swap');
+
+/* nav area start */
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+
+.bi-bank {
+    font-size: 14px;
+}
+
+.navbar-brand {
+    margin-left: 220px;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.bi-person-fill {
+    margin-top: -10px;
+}
+
+.login {
+    font-size: 12px;
+}
+
+.nav-btn {
+    height: 30px;
+    font-size: 12px;
+    margin-top: -7px;
+}
+
+/* nav area ends */
+.banner-title h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-link a:hover {
+    border-bottom: 2px solid black;
+}
+
+.count,
+.search-btn p,
+.studio-size p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-studio {
+    background-image: url("../img/banner-home.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.avenue h4 {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.btn-studio {
+    margin-bottom: 33px;
+}
+
+.btn-studio button {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.progress-area {
+    margin-left: 130px;
+}
+
+.progress {
+    margin-top: 12px;
+}
+
+.company-heading h4 {
+    font-size: 14px;
+}
+
+.company-img img {
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.feature-title,
+.city-title,
+.testimonial-title,
+.help-title,
+.agent-title {
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.feature-details h4 {
+    font-size: 12px;
+}
+
+.feature-details p {
+    font-size: 12px;
+}
+
+.feature-img img {
+    height: 200px;
+    width: 100%;
+}
+
+.feature-img {
+    position: relative;
+}
+
+.feature-details {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.feature-btn button:hover,
+.property-btn button:hover {
+    background-color: black;
+    color: white;
+}
+
+.feature-card img {
+    height: 180px;
+}
+
+.inner-property-btn button {
+    font-size: 8px;
+}
+
+.inner-icon-btn button {
+    margin-right: 10px;
+}
+
+.inner-property-btn {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.inner-icon-btn {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 110px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-desc {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.post-icon {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.post-icon div {
+    margin-right: 10px;
+}
+
+.post-icon div i {
+    margin-right: 5px;
+}
+
+.property-btn button {
+    font-size: 10px;
+}
+
+.city-img img {
+    width: 100%;
+    height: 200px;
+}
+
+.city-name h4 {
+    font-size: 14px;
+}
+
+.city-name p {
+    font-size: 12px;
+}
+
+.city-img {
+    position: relative;
+}
+
+.city-name {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 30px;
+    color: aliceblue;
+}
+
+.exprience-title h1 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.exprience-desc p {
+    font-size: 12px;
+}
+
+.count-sale p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.testimonial-img img {
+    width: 100%;
+    height: 250px;
+}
+
+.testimonial-text h4,
+.testimonial-text p,
+.customer-name h4,
+.customer-name p,
+.sell-card-body p,
+.sell-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.sell-card-body h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.slide-btn a {
+    color: black;
+}
+
+.slide-btn a:hover,
+.sell-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.inquiry-title h4 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inquiry-title p {
+    font-size: 12px;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.inquiry-img img {
+    width: 100%;
+    height: 525px;
+}
+.agent-register{
+    padding-bottom: 100px;
+}
+.agent-img img {
+    width: 70%;
+    margin-top: -100px;
+}
+
+.footer-logo img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.logo-desc p,
+.footer-list a,
+.footer-last {
+    font-size: 12px;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-list a:hover {
+    border-bottom: 1px solid black;
+
+}
+
+.footer-title {
+    font-size: 14px;
+}
+
+.footer-font {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.send-input input {
+    width: 350px;
+}
+
+.send-btn {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: -35px;
+}
+
+.get-app button {
+    width: 130px;
+    font-size: 10px;
+
+}
+
+.get-app button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-title,
+.fa-brands {
+    font-size: 10px;
+}
